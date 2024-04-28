@@ -1,7 +1,7 @@
 [package]
 name = "roydy"
 version = "0.1.0"
-authors = ["root"]
+authors = ["tacafe"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -14,3 +14,16 @@ dioxus = { version = "0.5", features = ["web", "router"] }
 tracing = "0.1.40"
 dioxus-logger = "0.5.0"
 manganis = "0.2.2"
+dioxus-web = "0.5.1"
+
+[dependencies.web-sys]
+version = "0.3.69"
+features = [
+  'Headers',
+  'Request',
+  'RequestInit',
+  'RequestMode',
+  'Response',
+  'Window',
+  'SpeechRecognition'
+]

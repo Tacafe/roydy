@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./app:/var/opt/roydy
+      - ./roydy:/var/opt/roydy
     command: /bin/bash -c "npm run build-css & dx serve --hot-reload"
     ports:
       - "8080:8080"
